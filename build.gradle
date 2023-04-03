@@ -61,11 +61,11 @@ tomcat() {
     httpProtocol = 'org.apache.coyote.http11.Http11Nio2Protocol'
     ajpProtocol = 'org.apache.coyote.ajp.AjpNio2Protocol'
     // プロジェクト名(コンテキストパス)
-    // http://localhost:8080/springwork2000g0 の場合
+    // http://localhost:8080/ の場合
     if( project.hasProperty('environment') ){
-        contextPath = "${project.environment}"
+        contextPath = ""
     } else {
-        contextPath = 'springwork2000g0'
+        contextPath = ''
     }
 }
 

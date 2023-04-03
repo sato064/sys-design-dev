@@ -18,14 +18,20 @@ import service.SampleService;
 // HttpServletを継承することで、このクラスはServletとして、働くことができる
 public class Index extends HttpServlet {
 
-    private static final long serialVersionUID = 1L;
+  private static final long serialVersionUID = 1L;
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-      request.setCharacterEncoding("UTF-8");
-      SampleService sampleService = new SampleService();
-      List<Sample> sampleList = sampleService.getSample();
-      request.setAttribute("sampleList", sampleList);
-      RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/sample/index.jsp");
-      dispatcher.forward(request, response);
-    }
+  public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    request.setCharacterEncoding("UTF-8");
+    SampleService sampleService = new SampleService();
+    List<Sample> sampleList = sampleService.getSample();
+    request.setAttribute("sampleList", sampleList);
+    RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/sample/index.jsp");
+    dispatcher.forward(request, response);
+  }
+
+  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    request.setCharacterEncoding("UTF-8");
+    SampleService ss = new SampleService();
+
+  }
 }
