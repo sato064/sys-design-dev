@@ -7,6 +7,6 @@
 
 <html>
   <body>
-    <h1 align="center">Hello minasan!!</h1>
+    <h2>koreha test page!</h2>
   </body>
 </html>
