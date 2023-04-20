@@ -28,10 +28,4 @@ public class Index extends HttpServlet {
     RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/sample/index.jsp");
     dispatcher.forward(request, response);
   }
-
-  public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    request.setCharacterEncoding("UTF-8");
-    SampleService ss = new SampleService();
-
-  }
 }
