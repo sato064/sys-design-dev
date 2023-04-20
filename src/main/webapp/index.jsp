@@ -7,6 +7,6 @@
 
 <html>
   <body>
-    <h1 align="center">Hello minasan!!</h1>
+    <h1 align="center">Hello System-Design!</h1>
   </body>
 </html>
